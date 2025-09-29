@@ -1,0 +1,44 @@
+GLOSARIO - Análisis de Cesta de Mercado
+
+🔹 Soporte (support)
+Proporción de tickets que contienen un conjunto de productos.
+Ejemplo: soporte = 0.05 → el conjunto aparece en el 5% de los tickets.
+
+🔹 Confianza (confidence)
+Probabilidad de que ocurra el consecuente dado que ocurre el antecedente.
+Ejemplo: confianza = 0.7 en la regla {Pan} → {Leche} → en el 70% de los tickets que tienen pan también hay leche.
+
+🔹 Lift
+Cuánto más probable es que ocurra el consecuente si ocurre el antecedente, comparado con la probabilidad de que ocurra solo.
+- Lift > 1 → asociación positiva.
+- Lift = 1 → independencia.
+- Lift < 1 → asociación negativa.
+
+🔹 Leverage
+Diferencia entre el soporte observado y el esperado si fueran independientes.
+Valores positivos indican ganancia real de la asociación.
+
+🔹 Conviction
+Mide cuánto cambia la probabilidad de que NO ocurra Y si ocurre X.
+Conviction → ∞ cuando la confianza = 1.
+
+🔹 Itemset frecuente
+Conjunto de productos que aparece en un número significativo de tickets, según un soporte mínimo.
+
+🔹 Reglas de asociación
+Expresan relaciones del tipo {X} → {Y}, indicando que si aparece X, es probable que aparezca Y.
+
+🔹 Bundle
+Conjunto de productos que suelen comprarse juntos, usado para promociones o combos.
+
+🔹 Apriori
+Algoritmo clásico que busca itemsets frecuentes paso a paso (1 item, pares, tríos…), controlado por min_support.
+
+🔹 FP-Growth
+Algoritmo alternativo a Apriori que usa un árbol de patrones frecuentes, más rápido en grandes catálogos.
+
+🔹 Cross-sell (venta cruzada)
+Recomendación de productos complementarios a lo que ya está en el carrito.
+
+🔹 Grafo de reglas
+Visualización donde los nodos son productos y las aristas representan reglas {X} → {Y}, con peso según métricas como lift o confianza.
